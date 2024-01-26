@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change the Work and Break time here"
+        app:layout_constraintBottom_toTopOf="@id/textview_work"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work"
+        app:layout_constraintBottom_toTopOf="@id/picker1"
+        app:layout_constraintEnd_toStartOf="@id/textview_break"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
+    <TextView
+        android:id="@+id/textview_break"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Break"
+        app:layout_constraintBottom_toTopOf="@id/picker2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textview_work"
+        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
+
+    <NumberPicker
+        android:id="@+id/picker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/textview_vibration"
+        app:layout_constraintEnd_toStartOf="@id/picker2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"/>
+
+    <NumberPicker
+        android:id="@+id/picker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/textview_vibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/picker1"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"/>
+
+
+    <TextView
+        android:id="@+id/textview_vibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Vibration on or off"
+        app:layout_constraintBottom_toTopOf="@id/switch_vibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/picker2" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_vibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_vibration"
+        app:layout_constraintBottom_toTopOf="@id/textview_alarmsound"/>
+
+
+    <TextView
+        android:id="@+id/textview_alarmsound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn the alarm sound on or off"
+        app:layout_constraintBottom_toTopOf="@id/switch_alarmsound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_vibration" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_alarmsound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm Sound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_alarmsound"
+        app:layout_constraintBottom_toTopOf="@id/textview_alarmsound_upload"/>
+
+    <TextView
+        android:id="@+id/textview_alarmsound_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload your own Alarm Sound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_alarmsound"
+        app:layout_constraintBottom_toTopOf="@id/button_save"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_alarmsound_upload" />
+</androidx.constraintlayout.widget.ConstraintLayout>
