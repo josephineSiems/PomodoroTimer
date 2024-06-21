@@ -10,17 +10,28 @@
         android:id="@+id/textview_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start your Pomodoro Timer!"
+        android:text="@string/start_pomodoro_timer"
         app:layout_constraintBottom_toTopOf="@id/textview_time"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textview_timeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/textview_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_title" />
+
+    <TextView
         android:id="@+id/textview_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="25:00"
+        android:text=""
         android:textSize="100sp"
         app:layout_constraintBottom_toTopOf="@id/button_start"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,39 +42,30 @@
         android:id="@+id/button_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
-        app:layout_constraintBottom_toTopOf="@id/button_stop"
+        android:text="@string/start"
+        app:layout_constraintBottom_toTopOf="@id/button_restart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_time" />
 
-    <Button
-        android:id="@+id/button_stop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stop"
-        app:layout_constraintBottom_toTopOf="@id/button_restart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_start" />
 
     <Button
         android:id="@+id/button_restart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restart Timer"
+        android:text="@string/restart"
         app:layout_constraintBottom_toTopOf="@id/button_change"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_stop" />
+        app:layout_constraintTop_toBottomOf="@id/button_start" />
 
     <Button
         android:id="@+id/button_change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Timer"
+        android:text="@string/change_timer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_stop" />
+        app:layout_constraintTop_toBottomOf="@id/button_restart" />
 </androidx.constraintlayout.widget.ConstraintLayout>

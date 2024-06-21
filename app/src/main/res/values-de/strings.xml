@@ -11,25 +11,25 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 
-    <string name="start_pomodoro_timer">Start your Pomodoro Timer!</string>
+    <string name="start_pomodoro_timer">Starte deinen Pomodoro Timer!</string>
     <string name="start">Start</string>
-    <string name="restart">Restart Timer</string>
-    <string name="change_timer">Change Timer</string>
+    <string name="restart">Timer Neustart</string>
+    <string name="change_timer">Timer ändern</string>
 
-    <string name="change_here">Change the Work and Break time here</string>
-    <string name="work">Work</string>
-    <string name="break_string">Break</string>
+    <string name="change_here">Ändere Arbeits- und Pausenzeit hier</string>
+    <string name="work">Arbeit</string>
+    <string name="break_string">Pause</string>
 
-    <string name="toggle_vibration">Toggle Vibration on or off</string>
+    <string name="toggle_vibration">Schalte Vibration an oder aus</string>
     <string name="vibration">Vibration</string>
-    <string name="toggle_alarm">Toggle Alarm on or off</string>
-    <string name="alarm_sound">Alarm Sound</string>
-    <string name="upload_alarm_sound">Upload your own Alarm Sound</string>
-    <string name="alarm_sound_volume">Alarm Sound Volume</string>
+    <string name="toggle_alarm">Schalte Alarm an oder aus</string>
+    <string name="alarm_sound">Alarm</string>
+    <string name="upload_alarm_sound">Lade deinen eigenen Alarm hoch</string>
+    <string name="alarm_sound_volume">Alarm Lautstärke</string>
     <string name="volume_default">5</string>
     <string name="volume_plus">+</string>
     <string name="volume_minus">-</string>
-    <string name="save_changes">Save Changes</string>
+    <string name="save_changes">Änderungen speichern</string>
 
 
 
