@@ -17,6 +17,9 @@ Both the alarm and vibration can be turned on and off and the alarm volume can b
 You can choose your own alarm by uploading any audio file (this feature is still work in progress and currently resets when the app is closed.)  
   
 <img src="/images/Options.jpg" alt="Options" width="200"/>  
+  
+## Languages
+Depending on your device's language settings the app will either be shown in english or german.    
 
 
   
